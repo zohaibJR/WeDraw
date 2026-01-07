@@ -341,6 +341,138 @@ PolygonCollider2D:
       - {x: 157.50877, y: 12.167701}
       - {x: 161.20557, y: 21.73778}
   m_UseDelaunayMesh: 0
+--- !u!1 &11331076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 11331077}
+  - component: {fileID: 11331080}
+  - component: {fileID: 11331079}
+  - component: {fileID: 11331078}
+  m_Layer: 5
+  m_Name: Setting
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &11331077
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11331076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1138179400}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.89801896, y: 0.86218745}
+  m_AnchorMax: {x: 0.95855105, y: 0.9931509}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &11331078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11331076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 11331079}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 156308435}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &11331079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11331076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 16ad76974d19fe94984e6b7e0389e34d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &11331080
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11331076}
+  m_CullTransparentMesh: 1
 --- !u!1 &14744137
 GameObject:
   m_ObjectHideFlags: 0
@@ -4710,6 +4842,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &86218637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6191,6 +6335,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8692,6 +8848,7 @@ RectTransform:
   - {fileID: 1504003680}
   - {fileID: 1123549442}
   - {fileID: 256809145}
+  - {fileID: 495819702}
   m_Father: {fileID: 1830120872}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -8864,6 +9021,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2021951584}
   - {fileID: 762702088}
   - {fileID: 2042645975}
   - {fileID: 1721306181}
@@ -28312,6 +28470,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 495548971}
   m_CullTransparentMesh: 1
+--- !u!1 &495819701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 495819702}
+  - component: {fileID: 495819705}
+  - component: {fileID: 495819704}
+  - component: {fileID: 495819703}
+  m_Layer: 5
+  m_Name: Setting
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &495819702
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495819701}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 155361969}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.89801896, y: 0.86218745}
+  m_AnchorMax: {x: 0.95855105, y: 0.9931509}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &495819703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495819701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 495819704}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 156308435}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &495819704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495819701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 16ad76974d19fe94984e6b7e0389e34d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &495819705
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495819701}
+  m_CullTransparentMesh: 1
 --- !u!1 &496449131
 GameObject:
   m_ObjectHideFlags: 0
@@ -31825,6 +32115,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -35853,6 +36155,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &601246887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37571,6 +37885,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -48493,6 +48819,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &807686976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50292,6 +50630,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &834395079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51498,6 +51848,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -53491,7 +53853,7 @@ RectTransform:
   m_Father: {fileID: 1058234965}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -56433,6 +56795,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &925446971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56668,6 +57042,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -59674,6 +60060,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &971021149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60925,6 +61323,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -62375,6 +62785,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1023586309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63616,6 +64038,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -69790,6 +70224,7 @@ RectTransform:
   - {fileID: 786404783}
   - {fileID: 430979161}
   - {fileID: 1624797381}
+  - {fileID: 11331077}
   m_Father: {fileID: 1830120872}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -77454,6 +77889,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1266907107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77705,6 +78152,7 @@ MonoBehaviour:
   drawingModeAudioSource: {fileID: 1383744818}
   imageFillModeAudioSource: {fileID: 595967567}
   paintModeAudioSource: {fileID: 1883359081}
+  volumeSlider: {fileID: 1987334821}
 --- !u!4 &1275068613
 Transform:
   m_ObjectHideFlags: 0
@@ -78745,6 +79193,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -81326,6 +81786,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1332522587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81933,6 +82405,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -85743,6 +86227,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1382104025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86522,6 +87018,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1394158979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87109,6 +87617,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -87801,6 +88321,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -90396,6 +90928,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -93813,6 +94357,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -99123,6 +99679,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1656293396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102257,8 +102825,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1982573984}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -103182,6 +103750,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -108149,7 +108729,6 @@ RectTransform:
   - {fileID: 1360081303}
   - {fileID: 282409126}
   - {fileID: 1861319826}
-  - {fileID: 156308436}
   - {fileID: 556693233}
   - {fileID: 636279263}
   - {fileID: 565940236}
@@ -108160,6 +108739,7 @@ RectTransform:
   - {fileID: 155361969}
   - {fileID: 72625055}
   - {fileID: 1018707462}
+  - {fileID: 156308436}
   - {fileID: 137714313}
   - {fileID: 778346061}
   m_Father: {fileID: 0}
@@ -113685,6 +114265,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1911199469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117865,7 +118457,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -119608,6 +120200,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2014624217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119951,6 +120555,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2021358872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120085,6 +120701,81 @@ PolygonCollider2D:
       - {x: -37.97591, y: -86.46563}
       - {x: -38.217194, y: -84.50132}
   m_UseDelaunayMesh: 0
+--- !u!1 &2021951583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2021951584}
+  - component: {fileID: 2021951586}
+  - component: {fileID: 2021951585}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2021951584
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021951583}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 156308436}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: -0.00000057331664, y: -0.000006267068}
+  m_AnchorMax: {x: 1.0000017, y: 1.000003}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2021951585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021951583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.3529412}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2021951586
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021951583}
+  m_CullTransparentMesh: 1
 --- !u!1 &2024415707
 GameObject:
   m_ObjectHideFlags: 0
@@ -126066,6 +126757,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartPaintModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2125054030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127059,7 +127762,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -707.54004}
+  m_AnchoredPosition: {x: 111.56116, y: -707.54004}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &191610769283395335
@@ -127098,7 +127801,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -424.52402}
+  m_AnchoredPosition: {x: 111.56116, y: -424.52402}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &233783734602592629
@@ -127179,7 +127882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -1047.1593}
+  m_AnchoredPosition: {x: 111.56116, y: -1047.1593}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &330191752469880199
@@ -127440,7 +128143,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -28.3016}
+  m_AnchoredPosition: {x: 111.56116, y: -28.3016}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &634424765524068020
@@ -127547,7 +128250,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -1103.7626}
+  m_AnchoredPosition: {x: 111.56116, y: -1103.7626}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &690238009900572862
@@ -127806,7 +128509,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -820.74646}
+  m_AnchoredPosition: {x: 111.56116, y: -820.74646}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &964434102060834980
@@ -127888,7 +128591,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -481.12723}
+  m_AnchoredPosition: {x: 111.56116, y: -481.12723}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1181742460225153611
@@ -127951,7 +128654,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -1330.1752}
+  m_AnchoredPosition: {x: 111.56116, y: -1330.1752}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1212385785255799531
@@ -128076,7 +128779,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -198.1112}
+  m_AnchoredPosition: {x: 111.56116, y: -198.1112}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1248232544722059724
@@ -128558,7 +129261,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -933.9529}
+  m_AnchoredPosition: {x: 111.56116, y: -933.9529}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1911721614161661820
@@ -129204,7 +129907,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -254.7144}
+  m_AnchoredPosition: {x: 111.56116, y: -254.7144}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2571372394453557827
@@ -130186,7 +130889,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -877.3497}
+  m_AnchoredPosition: {x: 111.56116, y: -877.3497}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3686629483745841573
@@ -130314,8 +131017,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2800170035981266570}
   m_HandleRect: {fileID: 301356898900446936}
   m_Direction: 2
-  m_Value: 0.9040529
-  m_Size: 0.47909394
+  m_Value: 0.91621894
+  m_Size: 0.4034523
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -130577,7 +131280,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -1160.3657}
+  m_AnchoredPosition: {x: 111.56116, y: -1160.3657}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4089694049173626384
@@ -130869,7 +131572,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -1386.7783}
+  m_AnchoredPosition: {x: 111.56116, y: -1386.7783}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4509039077028806283
@@ -130904,7 +131607,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -141.508}
+  m_AnchoredPosition: {x: 111.56116, y: -141.508}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4553486988223556551
@@ -131111,7 +131814,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -764.14325}
+  m_AnchoredPosition: {x: 111.56116, y: -764.14325}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4784215951169875490
@@ -131138,7 +131841,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -1216.9689}
+  m_AnchoredPosition: {x: 111.56116, y: -1216.9689}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4843144258399927440
@@ -131757,7 +132460,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -537.7304}
+  m_AnchoredPosition: {x: 111.56116, y: -537.7304}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5515763241186664191
@@ -132163,7 +132866,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -594.3336}
+  m_AnchoredPosition: {x: 111.56116, y: -594.3336}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6104521542950597410
@@ -132397,8 +133100,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4843144258399927440}
   m_HandleRect: {fileID: 7045001206995770562}
   m_Direction: 2
-  m_Value: 0.99999887
-  m_Size: 0.47909394
+  m_Value: 0.999999
+  m_Size: 0.4034523
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -132659,7 +133362,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -650.9368}
+  m_AnchoredPosition: {x: 111.56116, y: -650.9368}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6498513491861277910
@@ -133903,7 +134606,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -990.5561}
+  m_AnchoredPosition: {x: 111.56116, y: -990.5561}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8096932208513559726
@@ -134116,7 +134819,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -84.9048}
+  m_AnchoredPosition: {x: 111.56116, y: -84.9048}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8410719865987453910
@@ -134165,7 +134868,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -367.9208}
+  m_AnchoredPosition: {x: 111.56116, y: -367.9208}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &8428476663044012691
@@ -134353,7 +135056,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -1273.572}
+  m_AnchoredPosition: {x: 111.56116, y: -1273.572}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8508423863245871594
@@ -134784,7 +135487,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.649765, y: -311.3176}
+  m_AnchoredPosition: {x: 111.56116, y: -311.3176}
   m_SizeDelta: {x: 346.5869, y: 56.6032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8940228207842081958

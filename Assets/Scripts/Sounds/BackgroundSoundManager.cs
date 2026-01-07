@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI; // Required for UI Slider
 
 public class BackgroundSoundManager : MonoBehaviour
 {
@@ -7,22 +8,54 @@ public class BackgroundSoundManager : MonoBehaviour
     public AudioSource imageFillModeAudioSource;
     public AudioSource paintModeAudioSource;
 
+    [Header("Volume Control")]
+    public Slider volumeSlider; // Assign this in Inspector
+
     void Awake()
     {
         if (bgAudioSource == null)
             bgAudioSource = GetComponent<AudioSource>();
+
+        // Optional: Set initial volume from slider
+        if (volumeSlider != null)
+            SetAllVolumes(volumeSlider.value);
     }
 
-    // ✅ Called every time this GameObject is enabled/activated
     void OnEnable()
     {
         StartBGSound();
     }
 
+    void Start()
+    {
+        // Listen to slider value changes
+        if (volumeSlider != null)
+            volumeSlider.onValueChanged.AddListener(SetAllVolumes);
+    }
+
+    /* =========================
+       VOLUME CONTROL FUNCTION
+       ========================= */
+    public void SetAllVolumes(float volume)
+    {
+        if (bgAudioSource != null)
+            bgAudioSource.volume = volume;
+
+        if (drawingModeAudioSource != null)
+            drawingModeAudioSource.volume = volume;
+
+        if (imageFillModeAudioSource != null)
+            imageFillModeAudioSource.volume = volume;
+
+        if (paintModeAudioSource != null)
+            paintModeAudioSource.volume = volume;
+
+        Debug.Log("[Volume] Set to: " + volume);
+    }
+
     /* =========================
        BACKGROUND SOUND FUNCTIONS
        ========================= */
-
     public void StartBGSound()
     {
         if (bgAudioSource != null && !bgAudioSource.isPlaying)
@@ -44,7 +77,6 @@ public class BackgroundSoundManager : MonoBehaviour
     /* =========================
        DRAWING MODE SOUND FUNCTIONS
        ========================= */
-
     public void StartDrawingModeSound()
     {
         if (drawingModeAudioSource != null && !drawingModeAudioSource.isPlaying)
@@ -66,7 +98,6 @@ public class BackgroundSoundManager : MonoBehaviour
     /* =========================
        IMAGE FILL MODE SOUND FUNCTIONS
        ========================= */
-
     public void StartImageFillModeSound()
     {
         if (imageFillModeAudioSource != null && !imageFillModeAudioSource.isPlaying)
@@ -88,7 +119,6 @@ public class BackgroundSoundManager : MonoBehaviour
     /* =========================
        PAINT MODE SOUND FUNCTIONS
        ========================= */
-
     public void StartPaintModeSound()
     {
         if (paintModeAudioSource != null && !paintModeAudioSource.isPlaying)
