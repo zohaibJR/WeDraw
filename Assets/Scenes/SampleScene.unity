@@ -1171,6 +1171,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &30730553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2005,6 +2017,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7448,6 +7472,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &128614816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8986,6 +9022,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &160320800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9861,6 +9909,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &174239771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10506,6 +10566,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15506,6 +15578,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20676,6 +20760,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &371094953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21761,6 +21857,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23413,6 +23521,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &413064302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23742,6 +23862,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27925,6 +28057,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &495548974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28563,6 +28707,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -31271,6 +31427,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -34639,6 +34807,135 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595628538}
   m_CullTransparentMesh: 1
+--- !u!1 &595967566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 595967568}
+  - component: {fileID: 595967567}
+  m_Layer: 0
+  m_Name: ImageFillModeMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &595967567
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595967566}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4429ae3745e42584f804842f25fc6fb2, type: 3}
+  m_Resource: {fileID: 8300000, guid: 4429ae3745e42584f804842f25fc6fb2, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.467
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &595967568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595967566}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1468.9572, y: 588.3031, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &596126194
 GameObject:
   m_ObjectHideFlags: 0
@@ -46310,6 +46607,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &790840622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50273,6 +50582,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -58497,6 +58818,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &966096004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60737,6 +61070,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1014831077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61069,6 +61414,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -63853,6 +64210,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1057877709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64728,6 +65097,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -66429,6 +66810,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1105950955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66589,6 +66982,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -70909,6 +71314,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1162553279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71408,6 +71825,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -75809,6 +76238,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1247902451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76589,6 +77030,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1266778250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77007,6 +77460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bgAudioSource: {fileID: 1591847893}
   drawingModeAudioSource: {fileID: 1383744818}
+  imageFillModeAudioSource: {fileID: 595967567}
 --- !u!4 &1275068613
 Transform:
   m_ObjectHideFlags: 0
@@ -80130,6 +80584,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1327837804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80290,6 +80756,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -84828,6 +85306,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1381963733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86182,6 +86672,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -90616,6 +91118,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -100448,6 +100962,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1697384457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101858,6 +102384,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -105044,6 +105582,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1788277646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106539,6 +107089,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -109494,6 +110056,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StopImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1866259875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109921,6 +110495,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -114867,6 +115453,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -120195,6 +120793,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2039670293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121650,6 +122260,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1275068612}
         m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
         m_MethodName: StopBGSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1275068612}
+        m_TargetAssemblyTypeName: BackgroundSoundManager, Assembly-CSharp
+        m_MethodName: StartImageFillModeSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -131377,8 +131999,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4843144258399927440}
   m_HandleRect: {fileID: 7045001206995770562}
   m_Direction: 2
-  m_Value: 0.999999
-  m_Size: 0.4034523
+  m_Value: 0.99999887
+  m_Size: 0.47909394
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -134068,4 +134690,5 @@ SceneRoots:
   - {fileID: 1275068613}
   - {fileID: 1591847894}
   - {fileID: 1383744819}
+  - {fileID: 595967568}
   - {fileID: 435230507}

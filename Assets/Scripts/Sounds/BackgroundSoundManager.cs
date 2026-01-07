@@ -4,6 +4,7 @@ public class BackgroundSoundManager : MonoBehaviour
 {
     public AudioSource bgAudioSource;
     public AudioSource drawingModeAudioSource;
+    public AudioSource imageFillModeAudioSource;
 
     void Awake()
     {
@@ -21,9 +22,6 @@ public class BackgroundSoundManager : MonoBehaviour
        BACKGROUND SOUND FUNCTIONS
        ========================= */
 
-    /// <summary>
-    /// ✅ Starts playing the background sound if it’s not already playing.
-    /// </summary>
     public void StartBGSound()
     {
         if (bgAudioSource != null && !bgAudioSource.isPlaying)
@@ -33,9 +31,6 @@ public class BackgroundSoundManager : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// ✅ Stops the background sound if it’s currently playing.
-    /// </summary>
     public void StopBGSound()
     {
         if (bgAudioSource != null && bgAudioSource.isPlaying)
@@ -49,9 +44,6 @@ public class BackgroundSoundManager : MonoBehaviour
        DRAWING MODE SOUND FUNCTIONS
        ========================= */
 
-    /// <summary>
-    /// ✅ Starts playing the drawing mode sound if it’s not already playing.
-    /// </summary>
     public void StartDrawingModeSound()
     {
         if (drawingModeAudioSource != null && !drawingModeAudioSource.isPlaying)
@@ -61,15 +53,34 @@ public class BackgroundSoundManager : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// ✅ Stops the drawing mode sound if it’s currently playing.
-    /// </summary>
     public void StopDrawingModeSound()
     {
         if (drawingModeAudioSource != null && drawingModeAudioSource.isPlaying)
         {
             drawingModeAudioSource.Stop();
             Debug.Log("[Drawing Mode Sound] Stopped.");
+        }
+    }
+
+    /* =========================
+       IMAGE FILL MODE SOUND FUNCTIONS
+       ========================= */
+
+    public void StartImageFillModeSound()
+    {
+        if (imageFillModeAudioSource != null && !imageFillModeAudioSource.isPlaying)
+        {
+            imageFillModeAudioSource.Play();
+            Debug.Log("[Image Fill Mode Sound] Started.");
+        }
+    }
+
+    public void StopImageFillModeSound()
+    {
+        if (imageFillModeAudioSource != null && imageFillModeAudioSource.isPlaying)
+        {
+            imageFillModeAudioSource.Stop();
+            Debug.Log("[Image Fill Mode Sound] Stopped.");
         }
     }
 }
