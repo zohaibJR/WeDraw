@@ -5,6 +5,7 @@ public class BackgroundSoundManager : MonoBehaviour
     public AudioSource bgAudioSource;
     public AudioSource drawingModeAudioSource;
     public AudioSource imageFillModeAudioSource;
+    public AudioSource paintModeAudioSource;
 
     void Awake()
     {
@@ -81,6 +82,28 @@ public class BackgroundSoundManager : MonoBehaviour
         {
             imageFillModeAudioSource.Stop();
             Debug.Log("[Image Fill Mode Sound] Stopped.");
+        }
+    }
+
+    /* =========================
+       PAINT MODE SOUND FUNCTIONS
+       ========================= */
+
+    public void StartPaintModeSound()
+    {
+        if (paintModeAudioSource != null && !paintModeAudioSource.isPlaying)
+        {
+            paintModeAudioSource.Play();
+            Debug.Log("[Paint Mode Sound] Started.");
+        }
+    }
+
+    public void StopPaintModeSound()
+    {
+        if (paintModeAudioSource != null && paintModeAudioSource.isPlaying)
+        {
+            paintModeAudioSource.Stop();
+            Debug.Log("[Paint Mode Sound] Stopped.");
         }
     }
 }

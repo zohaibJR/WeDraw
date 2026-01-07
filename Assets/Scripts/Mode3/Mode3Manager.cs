@@ -14,6 +14,8 @@ public class Mode3Manager : MonoBehaviour
         Spray,
         Pencil
     }
+    [Header("Sound")]
+    public Mode3SoundManager soundManager;
 
     [Header("UI Elements")]
     public Slider brushSizeSlider; // Brush size slider from UI
@@ -48,6 +50,7 @@ public class Mode3Manager : MonoBehaviour
     private Color savedColor; // Used when temporarily overriding brush color
     private bool isAdjustingBrush = false; // Flag for brush preview mode
     private readonly int textureScale = 1; // Can downscale texture if needed
+    private bool isBrushing = false;
 
     // Helper method to get the index in the 1D color array
     private int GetIndex(int x, int y)
@@ -118,21 +121,28 @@ public class Mode3Manager : MonoBehaviour
     // =========================================================================
     // DRAWING LOOP & OPTIMIZED APPLY
     // =========================================================================
-
     void Update()
     {
-        // Check if mouse is pressed
-        if (Input.GetMouseButton(0))
-        {
-            if (drawingRect == null) return;
+        bool isMouseDown = Input.GetMouseButton(0);
 
-            // Convert screen position to local position within the drawing area RectTransform
-            if (RectTransformUtility.ScreenPointToLocalPointInRectangle(drawingRect, Input.mousePosition, null, out Vector2 localMousePos))
+        if (isMouseDown && drawingRect != null)
+        {
+            if (RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                drawingRect,
+                Input.mousePosition,
+                null,
+                out Vector2 localMousePos))
             {
-                // Check if the local position is actually inside the rect's bounds
                 if (drawingRect.rect.Contains(localMousePos))
                 {
-                    hasDrawnThisFrame = true; // Set flag to trigger GPU update
+                    // 🔊 START BRUSH SOUND (only once)
+                    if (!isBrushing)
+                    {
+                        isBrushing = true;
+                        soundManager?.PlayBrushingSound();
+                    }
+
+                    hasDrawnThisFrame = true;
 
                     Vector2 curr = localMousePos;
 
@@ -144,7 +154,6 @@ public class Mode3Manager : MonoBehaviour
                     {
                         Vector2 prev = lastMousePos.Value;
                         float distance = Vector2.Distance(prev, curr);
-                        // The multiplier (e.g., 2) determines the resolution of the line
                         int steps = Mathf.CeilToInt(distance * 2f);
 
                         for (int i = 0; i <= steps; i++)
@@ -155,15 +164,28 @@ public class Mode3Manager : MonoBehaviour
                     }
 
                     lastMousePos = curr;
+                    return; // ⛔ IMPORTANT: exit early so stop logic doesn't trigger
                 }
             }
         }
-        else
+
+        // 🛑 STOP BRUSHING (mouse released or left drawing area)
+        if (isBrushing)
         {
-            // Mouse button released, line drawing stops
-            lastMousePos = null;
+            isBrushing = false;
+            soundManager?.StopBrushingSound();
         }
+
+        lastMousePos = null;
     }
+
+    void OnDisable()
+    {
+        isBrushing = false;
+        soundManager?.StopBrushingSound();
+    }
+
+
 
     void LateUpdate()
     {
