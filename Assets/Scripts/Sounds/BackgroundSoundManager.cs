@@ -3,6 +3,7 @@
 public class BackgroundSoundManager : MonoBehaviour
 {
     public AudioSource bgAudioSource;
+    public AudioSource drawingModeAudioSource;
 
     void Awake()
     {
@@ -13,8 +14,12 @@ public class BackgroundSoundManager : MonoBehaviour
     // ✅ Called every time this GameObject is enabled/activated
     void OnEnable()
     {
-        StartBGSound();   // Use the new method for consistency
+        StartBGSound();
     }
+
+    /* =========================
+       BACKGROUND SOUND FUNCTIONS
+       ========================= */
 
     /// <summary>
     /// ✅ Starts playing the background sound if it’s not already playing.
@@ -24,7 +29,7 @@ public class BackgroundSoundManager : MonoBehaviour
         if (bgAudioSource != null && !bgAudioSource.isPlaying)
         {
             bgAudioSource.Play();
-            Debug.Log("[BG Sound] Background dsound started.");
+            Debug.Log("[BG Sound] Background sound started.");
         }
     }
 
@@ -37,6 +42,34 @@ public class BackgroundSoundManager : MonoBehaviour
         {
             bgAudioSource.Stop();
             Debug.Log("[BG Sound] Background sound stopped.");
+        }
+    }
+
+    /* =========================
+       DRAWING MODE SOUND FUNCTIONS
+       ========================= */
+
+    /// <summary>
+    /// ✅ Starts playing the drawing mode sound if it’s not already playing.
+    /// </summary>
+    public void StartDrawingModeSound()
+    {
+        if (drawingModeAudioSource != null && !drawingModeAudioSource.isPlaying)
+        {
+            drawingModeAudioSource.Play();
+            Debug.Log("[Drawing Mode Sound] Started.");
+        }
+    }
+
+    /// <summary>
+    /// ✅ Stops the drawing mode sound if it’s currently playing.
+    /// </summary>
+    public void StopDrawingModeSound()
+    {
+        if (drawingModeAudioSource != null && drawingModeAudioSource.isPlaying)
+        {
+            drawingModeAudioSource.Stop();
+            Debug.Log("[Drawing Mode Sound] Stopped.");
         }
     }
 }

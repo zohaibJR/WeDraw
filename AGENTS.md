@@ -2,7 +2,7 @@
 - Project name: WeDraw
 - Unity version: Unity 6000.1.7f1
 - Active game object:
-  - Name: SoundManager
+  - Name: LoadingDrawing
   - Tag: Untagged
-  - Layer: Default
+  - Layer: UI
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
@@ -6,12 +6,14 @@ public class PanelFillSound : MonoBehaviour
 {
     public GameObject LoadingPanelPanel;
     public GameObject DrawingPanel;
+
     [Header("References")]
-    public AudioSource audioSource;   // Assign the AudioSource on the panel
-    public Image fillImage;           // Assign the child Image with Fill Method
+    public AudioSource audioSource;   // Fill sound
+    public Image fillImage;           // Fill Image
+    public BackgroundSoundManager soundManager; // <-- ADD THIS
 
     [Header("Settings")]
-    public float fillDuration =.25f;   // Time (seconds) to fill image
+    public float fillDuration = 0.25f;
 
     private bool hasPlayed = false;
 
@@ -26,7 +28,7 @@ public class PanelFillSound : MonoBehaviour
 
     private IEnumerator FillRoutine()
     {
-        // Play the sound only once
+        // Play fill sound once
         if (!hasPlayed && audioSource != null)
         {
             audioSource.Play();
@@ -38,14 +40,22 @@ public class PanelFillSound : MonoBehaviour
         while (elapsed < fillDuration)
         {
             elapsed += Time.deltaTime;
+
             if (fillImage != null)
-            {
                 fillImage.fillAmount = Mathf.Clamp01(elapsed / fillDuration);
-            }
+
             yield return null;
         }
 
-        Debug.Log("Image Loading Filled**");
+        Debug.Log("Image Loading Filled **");
+
+        // 🔊 SWITCH TO DRAWING MODE SOUND
+        if (soundManager != null)
+        {
+            soundManager.StopBGSound();
+            soundManager.StartDrawingModeSound();
+        }
+
         DrawingPanel.SetActive(true);
         LoadingPanelPanel.SetActive(false);
     }
