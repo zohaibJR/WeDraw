@@ -1,57 +1,38 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class FillModeSoundManager : MonoBehaviour
 {
-    [Header("Assign the AudioSource that holds your sound clip")]
+    [Header("Assign the AudioSource that holds your sound clips")]
     public AudioSource RefreshSound;
     public AudioSource FilledSound;
     public AudioSource CompletedSound;
 
-    /// <summary>
-    /// Plays the sound once when called (e.g., from a UI Button).
-    /// </summary>
+    [Header("Fill Sound Control")]
+    public bool allowFillSound = true;   // ✅ global switch
+
     public void PlayRefreshSound()
     {
-        if (RefreshSound == null)
-        {
-            Debug.LogWarning("[FillModeSoundManager] No AudioSource assigned.");
-            return;
-        }
+        if (RefreshSound == null) return;
 
         if (!RefreshSound.isPlaying)
-        {
             RefreshSound.Play();
-            Debug.Log("[FillModeSoundManager] Panel sound played once.");
-        }
     }
 
     public void PlayFilledSound()
     {
-        if (FilledSound == null)
-        {
-            Debug.LogWarning("[FillModeSoundManager] No AudioSource assigned.");
-            return;
-        }
+        if (!allowFillSound) return;   // ❌ block when None selected
+        if (FilledSound == null) return;
 
         if (!FilledSound.isPlaying)
-        {
             FilledSound.Play();
-            Debug.Log("[FillModeSoundManager] Panel sound played once.");
-        }
     }
 
     public void PlayCompletedSound()
     {
-        if (CompletedSound == null)
-        {
-            Debug.LogWarning("[FillModeSoundManager] No AudioSource assigned.");
-            return;
-        }
+        if (!allowFillSound) return;   // ❌ block when None selected
+        if (CompletedSound == null) return;
 
         if (!CompletedSound.isPlaying)
-        {
             CompletedSound.Play();
-            Debug.Log("[FillModeSoundManager] Panel sound played once.");
-        }
     }
 }

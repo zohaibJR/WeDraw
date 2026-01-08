@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Mode3SoundManager : MonoBehaviour
 {
@@ -8,52 +8,35 @@ public class Mode3SoundManager : MonoBehaviour
     [Header("Assign the AudioSource that holds your continuous brushing sound")]
     public AudioSource BrushingSound;
 
-    /// <summary>
-    /// Plays the refresh sound once when called (e.g., from a UI Button).
-    /// </summary>
+    [Header("Brushing Sound Control")]
+    public bool allowBrushingSound = true;   // ✅ TRUE / FALSE
+
     public void PlayRefreshSound()
     {
-        if (RefreshSound == null)
-        {
-            Debug.LogWarning("[Mode3SoundManager] No RefreshSound assigned.");
-            return;
-        }
+        if (RefreshSound == null) return;
 
         if (!RefreshSound.isPlaying)
-        {
             RefreshSound.Play();
-            Debug.Log("[Mode3SoundManager] Refresh sound played once.");
-        }
     }
 
-    /// <summary>
-    /// Starts the continuous brushing sound if not already playing.
-    /// </summary>
     public void PlayBrushingSound()
     {
-        if (BrushingSound == null)
-        {
-            Debug.LogWarning("[Mode3SoundManager] No BrushingSound assigned.");
+        // ❌ Block sound when brush = None
+        if (!allowBrushingSound)
             return;
-        }
+
+        if (BrushingSound == null) return;
 
         if (!BrushingSound.isPlaying)
         {
-            BrushingSound.loop = true;   // ensure looping
+            BrushingSound.loop = true;
             BrushingSound.Play();
-            Debug.Log("[Mode3SoundManager] Brushing sound started.");
         }
     }
 
-    /// <summary>
-    /// Stops the brushing sound if it�s currently playing.
-    /// </summary>
     public void StopBrushingSound()
     {
         if (BrushingSound != null && BrushingSound.isPlaying)
-        {
             BrushingSound.Stop();
-            Debug.Log("[Mode3SoundManager] Brushing sound stopped.");
-        }
     }
 }

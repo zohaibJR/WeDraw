@@ -7,6 +7,7 @@ public class DrawingManager : MonoBehaviour
 {
     public enum BrushType
     {
+        None,     // 👈 added
         Solid,
         Crayon,
         Marker,
@@ -253,6 +254,8 @@ public class DrawingManager : MonoBehaviour
 
         switch (currentBrush)
         {
+            case BrushType.None:
+                return; // 🚫 do nothing
             case BrushType.Solid:
                 DrawSolidBrush(centerX, centerY, radius);
                 return;
@@ -445,6 +448,22 @@ public class DrawingManager : MonoBehaviour
     }
 
     public void SetBrushColor(Color color) => brushColor = color;
+
+    public void SetBrushToNone()
+    {
+        Debug.Log("Brush set to NONE");
+        currentBrush = BrushType.None;
+
+        if (soundManager != null)
+        {
+            soundManager.allowBrushingSound = false; // ❌ disable brushing sound
+            soundManager.StopBrushingSound();        // 🛑 stop if already playing
+        }
+
+        HighlightActiveBrush(-1); // no button highlighted
+    }
+
+
     public void UseEraser() => brushColor = Color.white;
 
     public void ClearCanvas()
@@ -593,50 +612,67 @@ public class DrawingManager : MonoBehaviour
     // ---------- Brush Selectors with Highlight and Auto-Color Assignment ----------
 
     /// <summary>Selects the Solid brush and sets the color to Red.</summary>
+    /// 
     public void SetBrushToSolid()
     {
         Debug.Log("Solid selected");
-        brushColor = Color.red; // Automatically Red Color Selected
+        brushColor = Color.red;
         currentBrush = BrushType.Solid;
+
+        if (soundManager != null)
+            soundManager.allowBrushingSound = true; // ✅ enable brushing sound
+
         HighlightActiveBrush(0);
     }
 
-    /// <summary>Selects the Crayon brush and sets the color to Aqua (Cyan).</summary>
     public void SetBrushToCrayon()
     {
         Debug.Log("Crayon selected");
-        Debug.Log("Aqua (Cyan) selected");
-        brushColor = Color.cyan; // Automatically Aqua/Cyan Color Selected
+        brushColor = Color.cyan;
         currentBrush = BrushType.Crayon;
+
+        if (soundManager != null)
+            soundManager.allowBrushingSound = true;
+
         HighlightActiveBrush(1);
     }
 
-    /// <summary>Selects the Marker brush and sets the color to Pink.</summary>
     public void SetBrushToMarker()
     {
         Debug.Log("Marker selected");
-        brushColor = new Color(1f, 0.4f, 0.7f); // Pink Color Selected (R=1, G=0.4, B=0.7)
+        brushColor = new Color(1f, 0.4f, 0.7f);
         currentBrush = BrushType.Marker;
+
+        if (soundManager != null)
+            soundManager.allowBrushingSound = true;
+
         HighlightActiveBrush(2);
     }
 
-    /// <summary>Selects the Spray brush and sets the color to Green.</summary>
     public void SetBrushToSpray()
     {
         Debug.Log("Spray selected");
-        brushColor = Color.green; // Automatically Green Color Selected
+        brushColor = Color.green;
         currentBrush = BrushType.Spray;
+
+        if (soundManager != null)
+            soundManager.allowBrushingSound = true;
+
         HighlightActiveBrush(3);
     }
 
-    /// <summary>Selects the Pencil brush and sets the color to Yellow.</summary>
     public void SetBrushToPencil()
     {
         Debug.Log("Pencil selected");
-        brushColor = Color.yellow; // Automatically Yellow Color Selected
+        brushColor = Color.yellow;
         currentBrush = BrushType.Pencil;
+
+        if (soundManager != null)
+            soundManager.allowBrushingSound = true;
+
         HighlightActiveBrush(4);
     }
+
 
     // Moves the active brush button left, others back to zero
     private void HighlightActiveBrush(int activeIndex)

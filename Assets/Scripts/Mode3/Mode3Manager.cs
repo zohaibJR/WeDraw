@@ -8,6 +8,7 @@ public class Mode3Manager : MonoBehaviour
     // 🎨 Types of brushes available
     public enum BrushType
     {
+        None,       // ❌ no drawing, no sound
         Solid,
         Crayon,
         Marker,
@@ -221,19 +222,29 @@ public class Mode3Manager : MonoBehaviour
             case BrushType.Solid:
                 DrawSolidBrush(centerX, centerY, radius);
                 break;
+
             case BrushType.Crayon:
                 DrawCrayonBrush(centerX, centerY, radius);
                 break;
+
             case BrushType.Marker:
                 DrawMarkerBrush(centerX, centerY, radius);
                 break;
+
             case BrushType.Pencil:
                 DrawPencilBrush(centerX, centerY, radius);
                 break;
+
             case BrushType.Spray:
                 DrawSprayBrush(centerX, centerY, radius);
                 break;
+
+            case BrushType.None:
+            default:
+                // Do nothing
+                break;
         }
+
     }
 
     /// <summary>Draws a fully opaque, solid circle. (OPTIMIZED)</summary>
@@ -504,11 +515,29 @@ public class Mode3Manager : MonoBehaviour
 
     // ----------------- Brush Switch Buttons -----------------
 
+    public void SetBrushToNone()
+    {
+        Debug.Log("None Brush Selected");
+        currentBrush = BrushType.None;
+
+        if (soundManager != null)
+        {
+            soundManager.allowBrushingSound = false; // ❌ disable sound
+            soundManager.StopBrushingSound();        // stop immediately
+        }
+
+        HighlightActiveBrush(-1); // no button highlighted
+    }
+
     public void SetBrushToSolid()
     {
         Debug.Log("Solid Brush Selected, Red");
         brushColor = Color.red;
         currentBrush = BrushType.Solid;
+
+        if (soundManager != null)
+            soundManager.allowBrushingSound = true;
+
         HighlightActiveBrush(0);
     }
 
@@ -517,30 +546,46 @@ public class Mode3Manager : MonoBehaviour
         Debug.Log("Crayon Brush Selected, Aqua");
         brushColor = Color.cyan;
         currentBrush = BrushType.Crayon;
+
+        if (soundManager != null)
+            soundManager.allowBrushingSound = true;
+
         HighlightActiveBrush(1);
     }
 
     public void SetBrushToMarker()
     {
         Debug.Log("Marker Brush Selected, Pink");
-        brushColor = new Color(1f, 0.4f, 0.7f); // Pink
+        brushColor = new Color(1f, 0.4f, 0.7f);
         currentBrush = BrushType.Marker;
+
+        if (soundManager != null)
+            soundManager.allowBrushingSound = true;
+
         HighlightActiveBrush(2);
     }
 
     public void SetBrushToSpray()
     {
-        Debug.Log("Spray Brush Selected, green");
+        Debug.Log("Spray Brush Selected, Green");
         brushColor = Color.green;
         currentBrush = BrushType.Spray;
+
+        if (soundManager != null)
+            soundManager.allowBrushingSound = true;
+
         HighlightActiveBrush(3);
     }
 
     public void SetBrushToPencil()
     {
-        Debug.Log("Spray Brush Selected, yellow");
+        Debug.Log("Pencil Brush Selected, Yellow");
         brushColor = Color.yellow;
         currentBrush = BrushType.Pencil;
+
+        if (soundManager != null)
+            soundManager.allowBrushingSound = true;
+
         HighlightActiveBrush(4);
     }
 

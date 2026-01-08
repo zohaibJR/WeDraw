@@ -6,7 +6,17 @@ using UnityEngine.UI;
 
 public class ImageFillManager : MonoBehaviour
 {
-    public enum MarkerType { Solid, Crayon, Marker, Spray, Pencil, Eraser }
+    public enum MarkerType
+    {
+        None,      // ❌ no fill, no sound
+        Solid,
+        Crayon,
+        Marker,
+        Spray,
+        Pencil,
+        Eraser
+    }
+
 
     private HashSet<PolygonCollider2D> filledColliders = new HashSet<PolygonCollider2D>();
 
@@ -302,44 +312,71 @@ public class ImageFillManager : MonoBehaviour
     // New Public Functions for Marker Selection (Replacing the Switch)
     // -----------------------------------------------------------------
 
+    public void SelectNone()
+    {
+        Debug.Log("None selected");
+        SetMarkerAndColor(MarkerType.None, Color.clear, -1);
+
+        if (soundManager != null)
+            soundManager.allowFillSound = false; // ❌ disable all fill sounds
+
+        HighlightActiveBrush(-1); // no highlight
+    }
+
     public void SelectSolid()
     {
         Debug.Log("Solid selected");
         SetMarkerAndColor(MarkerType.Solid, Color.red, 0);
+
+        if (soundManager != null)
+            soundManager.allowFillSound = true;
     }
 
     public void SelectCrayon()
     {
         Debug.Log("Crayon selected");
         SetMarkerAndColor(MarkerType.Crayon, Color.blue, 1);
+
+        if (soundManager != null)
+            soundManager.allowFillSound = true;
     }
 
     public void SelectMarker()
     {
         Debug.Log("Marker selected");
-        // Pink color
         SetMarkerAndColor(MarkerType.Marker, new Color(1f, 0.4f, 0.7f), 2);
+
+        if (soundManager != null)
+            soundManager.allowFillSound = true;
     }
 
     public void SelectSpray()
     {
         Debug.Log("Spray selected");
         SetMarkerAndColor(MarkerType.Spray, Color.green, 3);
+
+        if (soundManager != null)
+            soundManager.allowFillSound = true;
     }
 
     public void SelectPencil()
     {
         Debug.Log("Pencil selected");
-        // yellow color here
         SetMarkerAndColor(MarkerType.Pencil, Color.yellow, 4);
+
+        if (soundManager != null)
+            soundManager.allowFillSound = true;
     }
 
     public void SelectEraser()
     {
         Debug.Log("Eraser selected");
-        // Eraser doesn't need a specific brush color, but we pass black as default
         SetMarkerAndColor(MarkerType.Eraser, Color.black, 5);
+
+        if (soundManager != null)
+            soundManager.allowFillSound = true; // eraser still allowed
     }
+
 
     // -----------------------------------------------------------------
 
